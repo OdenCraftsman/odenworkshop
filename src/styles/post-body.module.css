@@ -1,0 +1,76 @@
+.stack {
+    margin-bottom: 2rem;
+}
+
+.stack > *+* {
+    margin-bottom:var(--stack-space, 1.5rem);
+}
+
+.stack h2 {
+    --stack-space: 2rem;
+    border-bottom: 4px inset var(--blue1);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+	border-image: linear-gradient(to right, var(--blue1) 0%, var(--white) 100%);
+    border-image-slice: 1;
+}
+
+.stack h2 + *{
+    --stack-space: 0.8rem;
+}
+
+.stack h4 {
+    margin: 0 2rem  var(--stack-space, 1.5rem);
+    border-bottom: 2px inset var(--blue1);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+	border-image: linear-gradient(to right, var(--blue1) 0%, var(--white) 100%);
+    border-image-slice: 1;
+}
+
+.stack p {
+    line-height: 1.0;
+    margin: 0 2rem  var(--stack-space, 1.5rem);
+}
+
+.stack ul {
+    padding: revert;
+    list-style: revert;
+}
+
+.stack code{
+    margin: 0 2rem  var(--stack-space, 1.5rem);
+    list-style-type: decimal;
+    position: relative;
+    padding: 1rem 5rem 1rem 1rem;
+    border-radius: 5px;
+    background: var(--gray-75);
+    color: var(--white);
+    font-size: var(--body);
+    font-weight: bolder;
+}
+
+.stack img{
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 750px){
+    .stack img {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+.stack a{
+    margin-left: 1rem;
+}
+.stack a:link {
+    color: var(--blue2);
+}
+.stack a:visited {
+    color: var(--blue1);
+}
+.stack a:hover {
+    color: var(--yellow1);
+}

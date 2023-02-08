@@ -1,0 +1,41 @@
+.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 2rem 0 2rem;
+}
+.list ul {
+    margin: 3px;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border: 1px inset var(--yellow1);
+    cursor: pointer;
+    -webkit-transition: all  .3s ease;
+    transition: all  .3s ease;
+}
+.list ul:hover {
+    -webkit-transition: all  .3s ease;
+    transition: all  .3s ease;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    border: 4px inset var(--yellow1);
+}
+
+.list a{
+    margin-left: 1rem;
+    color: var(--black);
+    font-size: large;
+    font-weight: bolder;
+}
+.list a:link {
+    color: var(--black);
+}
+.list a:visited {
+    color: var(--black);
+}
+.list a:hover {
+    color: var(--black);
+}

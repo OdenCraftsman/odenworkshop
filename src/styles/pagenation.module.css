@@ -1,0 +1,9 @@
+.link {
+    font-weight: bold;
+}
+
+.flexContainer {
+    composes: spaceBetween from '@/styles/utils.module.css';
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}

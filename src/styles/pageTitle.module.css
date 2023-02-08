@@ -1,0 +1,16 @@
+.title {
+    font-size: var(--heading1);
+    font-weight: bolder;
+}
+
+.publish {
+    font-size: var(--small-heading2);
+    font-weight: lighter;
+    color: var(--gray-25);
+}
+
+.flexContainer {
+    composes: spaceBetween from '@/styles/utils.module.css';
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}

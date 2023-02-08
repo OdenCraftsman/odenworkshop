@@ -1,0 +1,12 @@
+.list {
+    --socialFontSize: 24px;
+    display: flex;
+    gap: 1.5rem;
+    font-size: var(--socialFontSize);
+}
+
+@media (max-width: 1000px){
+    .list {
+        --socialFontSize: 16px;
+    }
+}
