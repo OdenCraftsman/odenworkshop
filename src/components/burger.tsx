@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 
-import styles from '@/styles/burger.module.css'
+import styles from '@/styles/burger.module.css';
 import { config } from "process";
 
 
@@ -30,5 +30,5 @@ export default function Burger(){
                 </li>
             </div> */}
         </>
-    )
+    );
 }

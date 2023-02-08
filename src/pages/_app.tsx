@@ -11,7 +11,6 @@ config.autoAddCss = false
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { getWindowSize } from '@/lib/getWindowSize';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { CategoryList } from '.';
@@ -50,10 +49,10 @@ function App({ Component, pageProps }: AppProps){
             <Header burger={burgerDisplayState}/>
             <main>
                 <Component {...pageProps} />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+                {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
                 <script>
                     hljs.initHighlightingOnLoad();
-                </script>
+                </script> */}
             </main>
             <Footer fixed={isIndex}/>
         </>

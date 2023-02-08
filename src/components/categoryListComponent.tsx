@@ -17,5 +17,5 @@ export default function CategoryListComponent({categoryList, }:{categoryList:str
                 )}
             </li>
         </>
-    )
+    );
 }
