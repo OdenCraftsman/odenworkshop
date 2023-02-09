@@ -1,14 +1,13 @@
 import { Html, Main, Head, NextScript } from "next/document";
 
-
 export default function Document() {
-    return (
-        <Html lang='ja'>
-            <Head />
-            <body>
-                <Main/>
-                <NextScript/>
-            </body>
-        </Html>
-    )
+  return (
+    <Html lang="ja">
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }

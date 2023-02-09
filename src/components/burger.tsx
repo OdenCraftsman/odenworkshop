@@ -1,27 +1,22 @@
 import { useContext, useState } from "react";
 
-import styles from '@/styles/burger.module.css';
+import styles from "@/styles/burger.module.css";
 import { config } from "process";
 
+export default function Burger() {
+  const [menuState, setMenuState] = useState<boolean>(false);
+  const changeMenuState = () => setMenuState((prop) => !prop);
+  const closeState = () => setMenuState(false);
 
-export default function Burger(){
-    const [menuState, setMenuState] = useState<boolean>(false);
-    const changeMenuState = (): void => {
-        setMenuState( (prop) => !prop );
-    }
-    const closeState = (): void => {
-        setMenuState(false);
-    }
-
-    return (
-        <>
-            <nav className={menuState ? styles.open: styles.close}>
-                <button className={styles.btn} onClick={changeMenuState}>
-                    <span className={styles.bar}></span>
-                    <span className='sr-only'>menu</span>
-                </button>
-            </nav>
-            {/* <div className={styles.menuList}>
+  return (
+    <>
+      <nav className={menuState ? styles.open : styles.close}>
+        <button className={styles.btn} onClick={changeMenuState}>
+          <span className={styles.bar}></span>
+          <span className="sr-only">menu</span>
+        </button>
+      </nav>
+      {/* <div className={styles.menuList}>
                 <li>
                     <ul>初めに</ul>
                     <ul>Python</ul>
@@ -29,6 +24,6 @@ export default function Burger(){
                     <ul>TypeScript</ul>
                 </li>
             </div> */}
-        </>
-    );
+    </>
+  );
 }
