@@ -38,16 +38,31 @@
     list-style: revert;
 }
 
-.stack code{
-    margin: 0 2rem  var(--stack-space, 1.5rem);
+.stack pre{
+    margin: 0 3rem  var(--stack-space, 1.5rem);
     list-style-type: decimal;
     position: relative;
-    padding: 1rem 5rem 1rem 1rem;
+    padding: 1rem 5rem 1rem 2rem;
     border-radius: 5px;
-    background: var(--gray-75);
     color: var(--white);
     font-size: var(--body);
     font-weight: bolder;
+    background: var(--black);
+    border-radius: 5px;
+    white-space: pre-wrap;
+    line-height: 2rem;
+}
+
+.stack code span {
+    counter-increment: line-number;
+    display: list-item;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.stack code span::marker {
+    content: counter(line-number);
+    color: var(--white);
 }
 
 .stack img{
