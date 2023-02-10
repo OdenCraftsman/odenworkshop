@@ -53,18 +53,6 @@
     line-height: 2rem;
 }
 
-.stack code span {
-    counter-increment: line-number;
-    display: list-item;
-    padding-left: 1rem;
-    margin-left: 1rem;
-}
-
-.stack code span::marker {
-    content: counter(line-number);
-    color: var(--white);
-}
-
 .stack img{
     display: block;
     margin: auto;
