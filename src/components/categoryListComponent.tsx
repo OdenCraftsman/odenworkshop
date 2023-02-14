@@ -9,15 +9,15 @@ export default function CategoryListComponent({
 }) {
   return (
     <>
-      <li className={styles.list}>
+      <ul className={styles.list}>
         {categoryList.map((category, index) => (
-          <Link href={`/${category}`}>
-            <ul key={index}>
+          <Link href={`/${category}`} key={index}>
+            <li>
               {category}
-            </ul>
+            </li>
           </Link>
         ))}
-      </li>
+      </ul>
     </>
   );
 }
