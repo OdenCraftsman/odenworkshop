@@ -13,9 +13,11 @@ export default function PostsList({
     <>
       <li className={styles.list}>
         {posts.map(({ title, slug }, index) => (
-          <ul key={index}>
-            <Link href={`/${category}/${slug}`}>{title}</Link>
-          </ul>
+          <Link href={`/${category}/${slug}`}>
+            <ul key={index}>
+              {title}
+            </ul>
+          </Link>
         ))}
       </li>
     </>

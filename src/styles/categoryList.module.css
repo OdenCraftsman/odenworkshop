@@ -29,6 +29,7 @@
     color: var(--black);
     font-size: large;
     font-weight: bolder;
+    display: block;
 }
 .list a:link {
     color: var(--black);

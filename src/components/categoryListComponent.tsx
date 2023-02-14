@@ -11,9 +11,11 @@ export default function CategoryListComponent({
     <>
       <li className={styles.list}>
         {categoryList.map((category, index) => (
-          <ul key={index}>
-            <Link href={`/${category}`}>{category}</Link>
-          </ul>
+          <Link href={`/${category}`}>
+            <ul key={index}>
+              {category}
+            </ul>
+          </Link>
         ))}
       </li>
     </>
